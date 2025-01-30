@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Paradise - Contact Us & Newsletter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="stylethebanner.css">
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <header class="banner">
+        <div class="logo-section">
+            <a href="basicstructure.html" class="logo-link">
+                <img src="logo.png" alt="Makeup Paradise Logo" class="logo">
+                <h1 class ="site-name">Makeup Paradise</h1>
+            </a>
+        </div>
+        <div class="nav-section">
+            <a href="#" class="community-link">Community</a>
+            <button id="sign-in-btn">Sign In</button>
+            <div class="icons">
+                <span class="icon cart-icon">
+                    🛒
+                    <span id="cart-count">0</span>
+                </span>
+                <span class="icon fav-icon">
+                    ❤️
+                    <span id="fav-count">0</span>
+                </span>
+            </div>
+        </div>
+    </header>
+<!-- Contact Us Section -->
+<div class="contact-us">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+        </div>
+        <button type="submit" id="submit-contact">Send Message</button>
+    </form>
+</div>
+
+<!-- Newsletter Section -->
+<div class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Stay updated with the latest products, offers, and news from Makeup Paradise!</p>
+    <form id="newsletter-form">
+        <div class="form-group">
+            <label for="newsletter-email">Email:</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" id="submit-newsletter">Subscribe</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+<script src="contact.js"></script>
+<script src="functionality.js"></script>
+</body>
+</html>

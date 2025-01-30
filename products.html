@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Makeup Paradise</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="chatbox.css">
+    <link rel="stylesheet" href="stylethebanner.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="banner">
+        <div class="logo-section">
+            <a href="basicstructure.html" class="logo-link">
+                <img src="logo.png" alt="Makeup Paradise Logo" class="logo">
+                <h1 class ="site-name">Makeup Paradise</h1>
+            </a>
+        </div>
+        <div class="nav-section">
+            <a href="#" class="community-link">Community</a>
+            <button id="sign-in-btn">Sign In</button>
+            <div class="icons">
+                <span class="icon cart-icon">
+
+                    <a href="cart.html" class="icon cart-icon">
+                        🛒
+                        <span id="cart-count">0</span>
+                    </a>
+                    
+                </span>
+                <span class="icon fav-icon">
+                    ❤️
+                    <span id="fav-count">0</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Products Section -->
+    <main>
+        <h2>Our Products</h2>
+        
+        <!-- Product Categories -->
+        <div class="category-section">
+            
+        </div>
+        
+        <div class="product-list">
+            <!-- Products will be rendered here dynamically based on selected category -->
+        </div>
+    </main>
+
+    <!-- Product Details Modal -->
+    <div id="product-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="product-name">Product Name</h3>
+            <p id="product-description">Description</p>
+            <p><strong>Price:</strong> $<span id="product-price">0.00</span></p>
+            <p><strong>Details:</strong> <span id="product-details">Additional product details</span></p>
+            <button id="add-to-cart-btn">Add to Cart</button>
+            <button id="add-to-fav-btn">Add to Favorites</button>
+        </div>
+    </div>
+
+    <div id="chatbox">
+        <div id="chatbox-header">
+            <span>AI Assistant</span>
+            <button id="close-chatbox">&times;</button>
+        </div>
+        <div id="chatbox-content">
+            <div class="message assistant-message">Hello! I'm your Makeup Assistant. How can I help you today?</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type a message..." />
+        <button id="send-message">Send</button>
+    </div>
+
+
+    <script src="product.js"></script>
+    <script src = "chatbox.js"></script>
+    <script src="functionality.js"></script>
+</body>
+</html>

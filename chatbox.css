@@ -1,0 +1,82 @@
+/* Chatbox Styling */
+#chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+#chatbox-header {
+    background-color: #ff6fa5;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close-chatbox {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#chatbox-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.assistant-message {
+    background-color: #f3f3f3;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #ff6fa5;
+    color: white;
+    align-self: flex-end;
+}
+
+#user-input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#send-message {
+    background-color: #ff6fa5;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 18%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-message:hover {
+    background-color: #e55f91;
+}

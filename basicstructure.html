@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Paradise</title>
+    
+    <link rel="stylesheet" href="stylethebanner.css">
+    <link rel="stylesheet" href="chatbox.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <header class="banner">
+        <div class="logo-section">
+            <a href="basicstructure.html" class="logo-link">
+                <img src="logo.png" alt="Makeup Paradise Logo" class="logo">
+                <h1 class ="sitename">Makeup Paradise</h1>
+            </a>
+        </div>
+        <div class="nav-section">
+            <a href="#" class="community-link">Community</a>
+
+            <a href="cart.html" class="icon cart-icon">Cart</a>
+            
+
+            <div class="icons">
+                <span class="icon cart-icon">
+                    
+                        🛒
+                        <span id="cart-count">0</span>
+                
+                    
+                </span>
+                <span class="icon fav-icon">
+                    ❤️
+                    <span id="fav-count">0</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <main>
+        <section>
+            <h2>Welcome to Makeup Paradise!</h2>
+            <p>Your one-stop shop for all things beauty and skincare.</p>
+        
+            <button onclick="window.location.href='products.html'" class="navbutton">View Products</button>
+            <b></b>
+            <button onclick="window.location.href='contact.html'" class="navbutton">Contact Us</button>
+
+
+        </section>
+    </main>
+
+    <!-- Chatbox Section -->
+    <div id="chatbox">
+        <div id="chatbox-header">
+            <span>AI Assistant</span>
+            <button id="close-chatbox">&times;</button>
+        </div>
+        <div id="chatbox-content">
+            <div class="message assistant-message">Hello! I'm your Makeup Assistant. How can I help you today?</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type a message..." />
+        <button id="send-message">Send</button>
+    </div>
+
+    <script src="chatbox.js"></script>
+    <script src="script.js"></script>
+    <script src="functionality.js"></script>
+</body>
+</html>

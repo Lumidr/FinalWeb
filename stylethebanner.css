@@ -1,0 +1,188 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Banner Styles */
+.banner {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ff6fa5;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.community-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#sign-in-btn {
+    background-color: #fff;
+    color: #ff6fa5;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#sign-in-btn:hover {
+    background-color: #ffe6ef;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.icon span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #fff;
+    color: #ff6fa5;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+
+.navbutton {
+    background-color: #ff69b4; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbutton:hover {
+    background-color: #ff1493; 
+}
+
+.sitename {
+    color: white; 
+    margin: 0; 
+    font-size: 24px; 
+}
+
+.logo-link {
+    text-decoration: none; 
+    color: inherit; 
+    display: flex; 
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px; 
+}
+
+
+
+.loginform {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.loginform h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.loginform label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.loginform input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.loginform button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6fa5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+.loginform button:hover {
+    background-color: #ff3e91;
+}
+
+
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-total {
+    margin-top: 20px;
+    text-align: right;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
